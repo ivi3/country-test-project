@@ -1,0 +1,10 @@
+version: "3.7"
+services:
+  web:
+    container_name: paraf_test_project
+    ports:
+      - 8013:3000
+    build:
+      context: .
+      dockerfile: Dockerfile
+    restart: always
